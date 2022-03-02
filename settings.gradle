@@ -27,5 +27,4 @@ include(
 		'game-toe',
 		'game-tov',
 
-		'experiment-acme',
 )
