@@ -46,7 +46,7 @@ object FJSYS {
 }
 
 suspend fun VfsFile.openFJSYS(): VfsFile {
-	val out = NodeVfs(caseSensitive = false)
+	val out = NodeVfs()
 	for (e in FJSYS.read(this.open())) {
 		out.rootNode.createChild(e.name).stream = e.stream
 	}

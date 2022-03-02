@@ -6,6 +6,8 @@ import com.soywiz.korim.bitmap.Bitmap32
 import com.soywiz.korim.bitmap.Bitmap8
 import com.soywiz.korim.color.RGBA
 import com.soywiz.korim.color.RGBA_4444
+import com.soywiz.korim.format.ImageData
+import com.soywiz.korim.format.ImageEncodingProps
 import com.soywiz.korim.format.ImageFormat
 import com.soywiz.korim.format.ImageFrame
 import com.soywiz.korio.stream.*
@@ -84,8 +86,8 @@ object IMY : ImageFormat() {
 		}
 	}
 
-	override fun writeFrames(frames: List<ImageFrame>, s: SyncStream, filename: String) {
-		write(frames.first().bitmap, s)
+	override fun writeImage(image: ImageData, s: SyncStream, filename: String, props: ImageEncodingProps) {
+		write(image.mainBitmap, s)
 	}
 
 	fun write(bitmap: Bitmap, s: SyncStream) {
@@ -195,8 +197,8 @@ object IMY : ImageFormat() {
 		s.writeToAlign(4, 0x00)
 	}
 
-	override fun readFrames(s: SyncStream, filename: String): List<ImageFrame> {
-		return listOf(ImageFrame(read(s, filename)))
+	override fun readImage(s: SyncStream, filename: String): ImageData {
+		return ImageData(listOf(ImageFrame(read(s, filename))))
 	}
 
 	// This includes a compression algorithm? Must disasm executable to find out (font_xx.imy have different sizes)

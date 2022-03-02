@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="gradleHome" value="$PROJECT_DIR$/../../../../../ProgramData/chocolatey/lib/gradle/tools/gradle-7.3.3" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/common-rhcommon" />
+            <option value="$PROJECT_DIR$/common-vnovel" />
+            <option value="$PROJECT_DIR$/engine-ethornell" />
+            <option value="$PROJECT_DIR$/engine-talesof" />
+            <option value="$PROJECT_DIR$/game-criminalgirls" />
+            <option value="$PROJECT_DIR$/game-dividead" />
+            <option value="$PROJECT_DIR$/game-edelweiss" />
+            <option value="$PROJECT_DIR$/game-hanabira" />
+            <option value="$PROJECT_DIR$/game-shny" />
+            <option value="$PROJECT_DIR$/game-shuffle" />
+            <option value="$PROJECT_DIR$/game-toa" />
+            <option value="$PROJECT_DIR$/game-tod" />
+            <option value="$PROJECT_DIR$/game-toe" />
+            <option value="$PROJECT_DIR$/game-tov" />
+            <option value="$PROJECT_DIR$/game-ymk" />
+            <option value="$PROJECT_DIR$/platform-n3ds" />
+            <option value="$PROJECT_DIR$/platform-ps2" />
+            <option value="$PROJECT_DIR$/platform-psp" />
+            <option value="$PROJECT_DIR$/platform-psx" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

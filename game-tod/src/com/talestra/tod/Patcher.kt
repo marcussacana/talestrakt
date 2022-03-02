@@ -2,8 +2,6 @@ package com.talestra.tod
 
 import com.soywiz.korim.format.readBitmap
 import com.soywiz.korim.format.readNativeImage
-import com.soywiz.korim.geom.Anchor
-import com.soywiz.korim.geom.ScaleMode
 import com.soywiz.korio.async.EventLoop
 import com.soywiz.korio.vfs.ResourcesVfs
 import com.soywiz.korui.Application
@@ -26,7 +24,7 @@ object TodPatcher {
 		Application().frame("Tales of Destiny en español - v1.0", width = 640, height = 480, icon = icon) {
 			padding.setTo(8.pt)
 			vertical {
-				layersKeepAspectRatio(anchor = Anchor.BOTTOM_RIGHT, scaleMode = ScaleMode.COVER) {
+				layersKeepAspectRatio() {
 					width = 100.percent
 					height = 30.vh
 					image(bmp)
