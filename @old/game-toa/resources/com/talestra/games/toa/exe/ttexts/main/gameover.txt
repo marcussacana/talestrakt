@@ -1,4 +1,0 @@
-0057AF00:'Cargar'
-0057AF10:'Salir del juego'
-0057AF20:'Ver skit'
-0057AF30:'Y nunca más se volvió a saber de ellos...'
